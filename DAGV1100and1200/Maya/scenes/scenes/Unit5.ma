@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Unit5.ma
-//Last modified: Fri, Nov 20, 2026 06:23:44 PM
+//Last modified: Fri, Nov 20, 2026 06:29:48 PM
 //Codeset: 1252
 requires maya "2026";
 requires "stereoCamera" "10.0";
@@ -14,18 +14,18 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202607282326-107b4e8809";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26300)";
-fileInfo "UUID" "D53392D3-486A-139C-5CBF-48BD8A822347";
+fileInfo "UUID" "E4A3D647-4CBA-6F45-ED69-2D984815D9C7";
 createNode transform -s -n "persp";
 	rename -uid "E9FB6DC2-4847-D130-C567-3A951871D617";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -23.980198502891007 26.296996981875473 33.10258909258971 ;
-	setAttr ".r" -type "double3" -381.33835275820536 -52.199999999999413 2.5946468249199506e-15 ;
+	setAttr ".t" -type "double3" -3.5560862766270382 19.445826735349467 21.195775466614201 ;
+	setAttr ".r" -type "double3" -382.53835275816317 -43.800000000006214 2.2033319083289799e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "5FEF5E2E-4DAF-45CD-AE28-7C8F197FBABC";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 46.273581937620314;
+	setAttr ".coi" 22.50754289990109;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -5471,6 +5471,7 @@ createNode mesh -n "mantleShape" -p "|Fireplace|mantle|mantle";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.49526843428611755 0.49999997019767761 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
@@ -40490,36 +40491,7 @@ createNode file -n "Tileable_wood_texture_2_1";
 	setAttr ".cs" -type "string" "sRGB Encoded Rec.709 (sRGB)";
 createNode place2dTexture -n "place2dTexture2";
 	rename -uid "1A0297E9-457E-9E58-A542-AE8E3E1C14EA";
-createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "BC46C7DD-46EF-5E6F-ED39-F5BDCEE546E8";
-	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -239.53350572192821 -997.49231482863422 ;
-	setAttr ".tgi[0].vh" -type "double2" 625.83047305799028 -64.784835754558443 ;
-	setAttr -s 8 ".tgi[0].ni";
-	setAttr ".tgi[0].ni[0].x" 375;
-	setAttr ".tgi[0].ni[0].y" -107.14285278320312;
-	setAttr ".tgi[0].ni[0].nvs" 1923;
-	setAttr ".tgi[0].ni[1].x" 153.57142639160156;
-	setAttr ".tgi[0].ni[1].y" -107.14285278320312;
-	setAttr ".tgi[0].ni[1].nvs" 1923;
-	setAttr ".tgi[0].ni[2].x" -447.6190185546875;
-	setAttr ".tgi[0].ni[2].y" -114.28571319580078;
-	setAttr ".tgi[0].ni[2].nvs" 1923;
-	setAttr ".tgi[0].ni[3].x" -226.19046020507812;
-	setAttr ".tgi[0].ni[3].y" -114.28571319580078;
-	setAttr ".tgi[0].ni[3].nvs" 1923;
-	setAttr ".tgi[0].ni[4].x" -223.50260925292969;
-	setAttr ".tgi[0].ni[4].y" -475.5802001953125;
-	setAttr ".tgi[0].ni[4].nvs" 1923;
-	setAttr ".tgi[0].ni[5].x" 144.32444763183594;
-	setAttr ".tgi[0].ni[5].y" -448.64279174804688;
-	setAttr ".tgi[0].ni[5].nvs" 1923;
-	setAttr ".tgi[0].ni[6].x" 365.75302124023438;
-	setAttr ".tgi[0].ni[6].y" -448.64279174804688;
-	setAttr ".tgi[0].ni[6].nvs" 1923;
-	setAttr ".tgi[0].ni[7].x" -444.93118286132812;
-	setAttr ".tgi[0].ni[7].y" -475.5802001953125;
-	setAttr ".tgi[0].ni[7].nvs" 1923;
+	setAttr ".re" -type "float2" 5 5 ;
 createNode polyMapDel -n "polyMapDel2";
 	rename -uid "501B8D1B-44F9-8C11-09B4-60AA473DB809";
 	setAttr ".uopa" yes;
@@ -40553,6 +40525,59 @@ createNode polyTweakUV -n "polyTweakUV2";
 		 0.59369296 -1.15530074 0.59369296 0.38075238 -0.17321484 0.38075238 0.36165768 0.21403471
 		 1.45915127 0.54462069 1.39405322 0.76073593 0.29655957 0.43015009 0.19889534 0.36057526
 		 1.29638898 0.6911611 1.23129094 0.90727711 0.13379723 0.57669127;
+createNode polyMapDel -n "polyMapDel3";
+	rename -uid "3951D0C4-458D-418A-ACE9-22ABB6F8A80A";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 1 "f[0:5]";
+createNode polyAutoProj -n "polyAutoProj4";
+	rename -uid "61681F30-4FFC-565C-5874-93A8CFB6AB07";
+	setAttr ".cch" yes;
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 1 "f[0:5]";
+	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
+	setAttr ".s" -type "double3" 9.433866024017334 9.433866024017334 9.433866024017334 ;
+	setAttr ".ps" 0.20000000298023224;
+	setAttr ".dl" yes;
+createNode polyTweakUV -n "polyTweakUV3";
+	rename -uid "D225D68C-45C0-7EFC-B6D3-B1B95B41E09C";
+	setAttr ".uopa" yes;
+	setAttr -s 24 ".uvtk[0:23]" -type "float2" -0.61622709 -0.28840703 0.3397252
+		 0.70760888 0.29623491 0.74935001 -0.6597175 -0.24666601 -0.66676182 -0.239905 0.28919059
+		 0.75611097 0.24570024 0.79785216 -0.71025234 -0.19816399 0.9715907 0.10115974 0.6621508
+		 0.39815268 -0.29380164 -0.59786326 0.015638281 -0.89485621 0.65556782 0.40447086
+		 0.34612793 0.70146394 -0.60982448 -0.29455203 -0.30038461 -0.5915451 -0.058337271
+		 0.49517304 0.23865587 0.80461293 0.19516522 0.84635419 -0.10182774 0.53691417 -0.10887212
+		 0.54367524 0.18812084 0.85311514 0.14463049 0.89485615 -0.15236259 0.58541626;
+createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
+	rename -uid "6AFE8AE7-4B28-6B75-F930-D6A107E63394";
+	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
+	setAttr ".tgi[0].vl" -type "double2" -621.1179763061574 -1192.3606853119295 ;
+	setAttr ".tgi[0].vh" -type "double2" 245.93115547729718 -257.8369129227587 ;
+	setAttr -s 8 ".tgi[0].ni";
+	setAttr ".tgi[0].ni[0].x" -444.93118286132812;
+	setAttr ".tgi[0].ni[0].y" -475.5802001953125;
+	setAttr ".tgi[0].ni[0].nvs" 1923;
+	setAttr ".tgi[0].ni[1].x" 375;
+	setAttr ".tgi[0].ni[1].y" -107.14285278320312;
+	setAttr ".tgi[0].ni[1].nvs" 1923;
+	setAttr ".tgi[0].ni[2].x" -223.50260925292969;
+	setAttr ".tgi[0].ni[2].y" -475.5802001953125;
+	setAttr ".tgi[0].ni[2].nvs" 1923;
+	setAttr ".tgi[0].ni[3].x" 365.75302124023438;
+	setAttr ".tgi[0].ni[3].y" -448.64279174804688;
+	setAttr ".tgi[0].ni[3].nvs" 1923;
+	setAttr ".tgi[0].ni[4].x" -447.6190185546875;
+	setAttr ".tgi[0].ni[4].y" -114.28571319580078;
+	setAttr ".tgi[0].ni[4].nvs" 1923;
+	setAttr ".tgi[0].ni[5].x" 153.57142639160156;
+	setAttr ".tgi[0].ni[5].y" -107.14285278320312;
+	setAttr ".tgi[0].ni[5].nvs" 1923;
+	setAttr ".tgi[0].ni[6].x" 144.32444763183594;
+	setAttr ".tgi[0].ni[6].y" -448.64279174804688;
+	setAttr ".tgi[0].ni[6].nvs" 1923;
+	setAttr ".tgi[0].ni[7].x" -226.19046020507812;
+	setAttr ".tgi[0].ni[7].y" -114.28571319580078;
+	setAttr ".tgi[0].ni[7].nvs" 1923;
 select -ne :time1;
 	setAttr ".o" 77;
 	setAttr ".unw" 77;
@@ -40583,7 +40608,7 @@ select -ne :openPBR_shader1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 257 ".dsm";
+	setAttr -s 256 ".dsm";
 	setAttr ".ro" yes;
 	setAttr -s 5 ".gn";
 select -ne :initialParticleSE;
@@ -40709,7 +40734,8 @@ connectAttr "groupId15.id" "pCubeShape98.iog.og[2].gid";
 connectAttr "lambert2SG.mwc" "pCubeShape98.iog.og[2].gco";
 connectAttr "groupId16.id" "pCubeShape98.ciog.cog[1].cgid";
 connectAttr "polyTweakUV2.uvtk[0]" "pCubeShape98.uvst[0].uvtw";
-connectAttr "transformGeometry5.og" "mantleShape.i";
+connectAttr "polyTweakUV3.out" "mantleShape.i";
+connectAttr "polyTweakUV3.uvtk[0]" "mantleShape.uvst[0].uvtw";
 connectAttr "layer1.di" "mantlecandle1.do";
 connectAttr "layer1.di" "mantlecandle2.do";
 connectAttr "layer1.di" "mantledecorationrock.do";
@@ -41010,6 +41036,7 @@ connectAttr "place2dTexture1.o" "Seamless_brick_texture_1.uv";
 connectAttr "place2dTexture1.ofs" "Seamless_brick_texture_1.fs";
 connectAttr "Tileable_wood_texture_2_1.oc" "wood.c";
 connectAttr "wood.oc" "lambert3SG.ss";
+connectAttr "mantleShape.iog" "lambert3SG.dsm" -na;
 connectAttr "lambert3SG.msg" "materialInfo2.sg";
 connectAttr "wood.msg" "materialInfo2.m";
 connectAttr "Tileable_wood_texture_2_1.msg" "materialInfo2.t" -na;
@@ -41035,28 +41062,32 @@ connectAttr "place2dTexture2.vt3" "Tileable_wood_texture_2_1.vt3";
 connectAttr "place2dTexture2.vc1" "Tileable_wood_texture_2_1.vc1";
 connectAttr "place2dTexture2.o" "Tileable_wood_texture_2_1.uv";
 connectAttr "place2dTexture2.ofs" "Tileable_wood_texture_2_1.fs";
-connectAttr "lambert2SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
-		;
-connectAttr "brick.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
-		;
-connectAttr "place2dTexture1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
-		;
-connectAttr "Seamless_brick_texture_1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
-		;
-connectAttr "Tileable_wood_texture_2_1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
-		;
-connectAttr "wood.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
-		;
-connectAttr "lambert3SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
-		;
-connectAttr "place2dTexture2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[7].dn"
-		;
 connectAttr "transformGeometry4.og" "polyMapDel2.ip";
 connectAttr "polyMapDel2.out" "polyAutoProj3.ip";
 connectAttr "pCubeShape98.wm" "polyAutoProj3.mp";
 connectAttr "polyAutoProj3.out" "groupParts1.ig";
 connectAttr "groupId15.id" "groupParts1.gi";
 connectAttr "groupParts1.og" "polyTweakUV2.ip";
+connectAttr "transformGeometry5.og" "polyMapDel3.ip";
+connectAttr "polyMapDel3.out" "polyAutoProj4.ip";
+connectAttr "mantleShape.wm" "polyAutoProj4.mp";
+connectAttr "polyAutoProj4.out" "polyTweakUV3.ip";
+connectAttr "place2dTexture2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+		;
+connectAttr "lambert2SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
+		;
+connectAttr "Tileable_wood_texture_2_1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
+		;
+connectAttr "lambert3SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
+		;
+connectAttr "place2dTexture1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
+		;
+connectAttr "brick.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
+		;
+connectAttr "wood.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
+		;
+connectAttr "Seamless_brick_texture_1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[7].dn"
+		;
 connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert3SG.pa" ":renderPartition.st" -na;
 connectAttr "brick.msg" ":defaultShaderList1.s" -na;
@@ -41347,7 +41378,6 @@ connectAttr "cushion2Shape.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "cushion1Shape.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "cushion1Shape.ciog.cog[1]" ":initialShadingGroup.dsm" -na;
 connectAttr "cushion2Shape.iog.og[0]" ":initialShadingGroup.dsm" -na;
-connectAttr "mantleShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "revolvedSurfaceShape1.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "revolvedSurfaceShape2.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "revolvedSurfaceShape3.iog" ":initialShadingGroup.dsm" -na;
