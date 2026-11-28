@@ -1,0 +1,57 @@
+[33mc93db1c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: reset: moving to origin/main
+[33me8f4b3b[m[33m ([m[1;35mrefs/stash[m[33m)[m HEAD@{1}: reset: moving to HEAD
+[33me8f4b3b[m[33m ([m[1;35mrefs/stash[m[33m)[m HEAD@{2}: reset: moving to HEAD
+[33me8f4b3b[m[33m ([m[1;35mrefs/stash[m[33m)[m HEAD@{3}: reset: moving to HEAD
+[33me8f4b3b[m[33m ([m[1;35mrefs/stash[m[33m)[m HEAD@{4}: reset: moving to HEAD
+[33me8f4b3b[m[33m ([m[1;35mrefs/stash[m[33m)[m HEAD@{5}: reset: moving to HEAD
+[33me8f4b3b[m[33m ([m[1;35mrefs/stash[m[33m)[m HEAD@{6}: filter-branch: rewrite
+[33m9744a69[m HEAD@{7}: reset: moving to HEAD
+[33m9744a69[m HEAD@{8}: reset: moving to 9744a6916414fe996dd71bb4fa8183699cbbbc6b
+[33m975fcad[m HEAD@{9}: reset: moving to 975fcada6c48e84126a0a87f3cabdbefb4ac5822
+[33mc7d5db9[m HEAD@{10}: reset: moving to c7d5db9d3f2e11cd8e3d107557a63d2f7a805e4e
+[33mda907d3[m HEAD@{11}: reset: moving to da907d318c29a81d0db5fbca55abcfd43dbee352
+[33mb656356[m HEAD@{12}: reset: moving to b656356933d1c2999ac8d892316cba9c1dd36414
+[33mf520ddc[m HEAD@{13}: commit: finished
+[33mb656356[m HEAD@{14}: commit: finished unit5, maps baked
+[33mda907d3[m HEAD@{15}: commit: uv unwrapped livingroom table candle
+[33mc7d5db9[m HEAD@{16}: commit: remapped living room stool
+[33m975fcad[m HEAD@{17}: reset: moving to 975fcada6c48e84126a0a87f3cabdbefb4ac5822
+[33m7450517[m HEAD@{18}: commit: remapped living room stool
+[33m975fcad[m HEAD@{19}: commit: remapped floor plant uv
+[33m9744a69[m HEAD@{20}: commit: uv map textured
+[33mc93db1c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{21}: commit: textured wood mantle
+[33m7c1da4d[m HEAD@{22}: commit: Update Unit5.ma
+[33m56c3fe7[m HEAD@{23}: commit: Create Unit5.ma
+[33m6b6eafb[m HEAD@{24}: commit: Update 4B_RoomScene.ma
+[33m6568437[m HEAD@{25}: commit: Update 4B_RoomScene.ma
+[33mf88eb32[m HEAD@{26}: commit: Update 4B_RoomScene.ma
+[33m809d931[m HEAD@{27}: commit: Update 4B_RoomScene.ma
+[33m3fc25fb[m HEAD@{28}: commit: Create 4B_RoomScene.ma
+[33m1946528[m HEAD@{29}: commit: Update Unit3_CurvesLab_finished.ma
+[33mc28e57c[m HEAD@{30}: commit: Update Unit3_CurvesLab_finished.ma
+[33med8ecac[m HEAD@{31}: commit: Create Unit3_CurvesLab_finished.ma
+[33m16801e7[m HEAD@{32}: pull --ff --recurse-submodules --progress -- origin: Fast-forward
+[33m4f049ec[m HEAD@{33}: commit: Update Unit3_CurvesLab.ma
+[33mc748029[m HEAD@{34}: commit: Update Unit3_CurvesLab.ma
+[33m65130d2[m HEAD@{35}: commit: Create Unit3_CurvesLab.ma
+[33m98fa61d[m HEAD@{36}: pull --ff --recurse-submodules --progress -- origin: Fast-forward
+[33m0e39263[m HEAD@{37}: commit: Create RoomScene_AustinCecil6.ma
+[33m38273e2[m HEAD@{38}: pull --ff --recurse-submodules --progress -- origin: Fast-forward
+[33ma7ac85f[m HEAD@{39}: commit: added window
+[33m53da311[m HEAD@{40}: commit: Update RoomScene_AustinCecil (5).ma
+[33maf006e8[m HEAD@{41}: commit: Update RoomScene_AustinCecil (5).ma
+[33m506663a[m HEAD@{42}: commit: Update RoomScene_AustinCecil (5).ma
+[33m19a2153[m HEAD@{43}: commit: Update RoomScene_AustinCecil (5).ma
+[33m7ab8efa[m HEAD@{44}: reset: moving to 7ab8efa406b0c2c7dd9d56b669c6951ee6d6d25b
+[33mdd4b578[m HEAD@{45}: commit: Update RoomScene_AustinCecil (5).ma
+[33m7ab8efa[m HEAD@{46}: commit: Create RoomScene_AustinCecil (5).ma
+[33me52e667[m HEAD@{47}: pull --ff --recurse-submodules --progress -- origin: Fast-forward
+[33mcea32bc[m HEAD@{48}: commit: Update RoomScene_AustinCecil.ma
+[33mc616771[m HEAD@{49}: commit: finished table, chair and floor
+[33m673a440[m HEAD@{50}: commit: Update workspace.mel
+[33m02c6b1b[m HEAD@{51}: reset: moving to 02c6b1bfba80bc1a6300b4782c8382c1cd169145
+[33m070ad5a[m HEAD@{52}: commit: unit 1
+[33m02c6b1b[m HEAD@{53}: commit: Update RoomScene_AustinCecil.ma
+[33m8ff1947[m HEAD@{54}: commit: table created
+[33m9c1f837[m HEAD@{55}: commit: added sphere push to repository test
+[33mfa5a330[m[33m ([m[1;31mupstream/main[m[33m, [m[1;31mupstream/HEAD[m[33m)[m HEAD@{56}: clone: from https://github.com/Austin-Cecil/Essentials.git
